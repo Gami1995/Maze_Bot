@@ -1,1 +1,14 @@
-
+  double score = 0;
+  Brain brain;
+  public void setup() {
+  size(400,800);
+   brain = new Brain();
+  }
+  
+  public void draw() {
+    background(900); 
+  }
+  
+   private void StartingPos() {
+    
+  }
