@@ -1,14 +1,18 @@
-  double score = 0;
-  Brain brain;
-  public void setup() {
-  size(400,800);
-   brain = new Brain();
+public class Brain {
+  private PVector pos;
+  public int[][] prevXYs = new int[200][2];
+  public int steps = 0;
+  private final int SIZE = 15;
+
+ public void show() {
+    fill(30,30,255);
+    rect(pos.x,pos.y,SIZE,SIZE);
   }
   
-  public void draw() {
-    background(900); 
+ private void addPrevPos(int x, int y) {
+    int nextIndex = steps % prevXYs.length;
+    prevXYs[nextIndex][0] = x;
+    prevXYs[nextIndex][1] = y;
+    steps++;
   }
-  
-   private void StartingPos() {
-    
-  }
+}
