@@ -1,1 +1,21 @@
-
+public class Maze {
+  private PVector pos;
+  private int SIZE;
+  
+  public void show() {
+    fill(25,30,45);
+    rect(pos.x,pos.y,SIZE,SIZE);
+  }
+  
+  private void walls(int x,int y) { 
+    pos = new PVector(x,y);
+  }
+  
+  
+  private void Finish() {
+    if (score == 25) {
+      
+      noLoop();
+    }
+  }
+}
