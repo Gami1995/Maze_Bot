@@ -6,7 +6,7 @@
   }
   
   public void draw() {
-    background(900); 
+    background(1900); 
   }
   
    private void StartingPos() {
